@@ -11,7 +11,7 @@ from (
         emp.emp_name,
         emp.job_name,
         emp.dep_id,
-        emp.salary
+        emp.salary,
         rank() over(partition by dep_id 
             order by emp.salary asc) rnk
     from employees as emp) as tmp

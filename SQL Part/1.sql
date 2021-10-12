@@ -8,6 +8,6 @@ select mp.emp_name,
        emp.salary,
        mng.salary
 from employees as emp
-     join employee as mng
+     join employees as mng
          on emp.manager_id = mng.emp_id
 where emp.salary > mng.salary 

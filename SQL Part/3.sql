@@ -2,6 +2,6 @@
 --количество сотрудников в которых 
 --превышает 3 человека 
 select emp.dep_id
-from emp
+from employees as emp
 group by emp.dep_id
 having count(*) > 3

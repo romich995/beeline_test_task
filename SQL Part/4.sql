@@ -9,7 +9,7 @@ select emp.emp_name,
 from employees as emp
      left join employees as mng
         on emp.manager_id = mng.emp_id
-     left join departnent as dep
+     left join department as dep
         on emp.dep_id = dep.dep_id
 where mng.dep_id <> emp.dep_id
       or mng.dep_id is null
