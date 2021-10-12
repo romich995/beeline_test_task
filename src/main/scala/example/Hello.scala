@@ -55,8 +55,6 @@ case None =>
 
 
 def run(arguments: Arguments): Unit = {
-  println("orders:" + arguments.orders)
-  println("customers:" + arguments.customers)
   val spark = SparkSession.builder
       .master("local")
       .appName("PopularProducts")
