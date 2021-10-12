@@ -2,7 +2,7 @@
 --заработную плату большую чем у непосредственного руководителя.
 --Отразить поля: имя, должность, id отдела, 
 --заработная плата сотрудника, зарплата руководителя select emp.emp_name,
-select mp.emp_name,
+select emp.emp_name,
        emp.job_name,
        emp.dep_id,
        emp.salary,
