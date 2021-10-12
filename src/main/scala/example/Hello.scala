@@ -1,4 +1,4 @@
-package test_task
+package example
 import org.apache.spark
 import org.apache.spark.sql.{DataFrame, DataFrameReader, Column}
 import org.apache.spark.sql.expressions.Window
